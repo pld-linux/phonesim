@@ -1,12 +1,12 @@
 Summary:	Phone Simulator for modem testing
 Summary(pl.UTF-8):	Symulator telefonu do testowania modemów
 Name:		phonesim
-Version:	1.20
+Version:	1.21
 Release:	1
 License:	GPL v2
 Group:		X11/Applications
 Source0:	https://www.kernel.org/pub/linux/network/ofono/%{name}-%{version}.tar.xz
-# Source0-md5:	44252d82a19a1c35d70160a6fbc965a1
+# Source0-md5:	c4b20598d59dc3c448a4c0fec8d7bdfb
 URL:		http://ofono.org/
 BuildRequires:	QtCore-devel >= 4
 BuildRequires:	QtDBus-devel >= 4
