@@ -1,24 +1,26 @@
 Summary:	Phone Simulator for modem testing
 Summary(pl.UTF-8):	Symulator telefonu do testowania modemów
 Name:		phonesim
-Version:	1.21
+Version:	2.0
 Release:	1
 License:	GPL v2
 Group:		X11/Applications
 Source0:	https://www.kernel.org/pub/linux/network/ofono/%{name}-%{version}.tar.xz
-# Source0-md5:	c4b20598d59dc3c448a4c0fec8d7bdfb
+# Source0-md5:	48ac291bdf726f0bc25f7ac445a8adb9
 URL:		http://ofono.org/
-BuildRequires:	QtCore-devel >= 4
-BuildRequires:	QtDBus-devel >= 4
-BuildRequires:	QtGui-devel >= 4
-BuildRequires:	QtNetwork-devel >= 4
-BuildRequires:	QtScript-devel >= 4
-BuildRequires:	QtXml-devel >= 4
-BuildRequires:	libstdc++-devel
+BuildRequires:	Qt5Core-devel >= 5
+BuildRequires:	Qt5DBus-devel >= 5
+BuildRequires:	Qt5Gui-devel >= 5
+BuildRequires:	Qt5Network-devel >= 5
+BuildRequires:	Qt5Qml-devel >= 5
+BuildRequires:	Qt5Widgets-devel >= 5.10
+BuildRequires:	Qt5Xml-devel >= 5
+BuildRequires:	libstdc++-devel >= 6:5
 BuildRequires:	pkgconfig
-BuildRequires:	qt4-build >= 4
+BuildRequires:	qt5-build >= 5
 BuildRequires:	tar >= 1:1.22
 BuildRequires:	xz
+Requires:	Qt5Widgets >= 5.10
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
